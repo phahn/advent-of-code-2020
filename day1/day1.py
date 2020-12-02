@@ -1,8 +1,11 @@
-f = open('day1/input.txt')
-numbers = []
-for line in f.readlines():
-    num = int(line)
-    numbers.append(num)
+
+def read_numbers(file):
+    f = open(file)
+    numbers = []
+    for line in f.readlines():
+        num = int(line)
+        numbers.append(num)
+    return numbers
 
 
 def part1(numbers):
@@ -20,5 +23,6 @@ def part2(numbers):
                     print(numbers[i] * numbers[j] * + numbers[k])
 
 
+numbers = read_numbers('day1/input.txt')
 part1(numbers)
 part2(numbers)
