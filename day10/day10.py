@@ -1,9 +1,6 @@
-from collections import deque
-
-
 def part1():
     f = open('day10/input.txt')
-    adapters = deque(sorted([int(line) for line in f.readlines()]))
+    adapters = sorted([int(line) for line in f.readlines()])
 
     r = {1: 0, 2: 0, 3: 1}
     s = 0
@@ -16,7 +13,7 @@ def part1():
 
 def part2():
     f = open('day10/input.txt')
-    adapters = deque(sorted([int(line) for line in f.readlines()]))
+    adapters = sorted([int(line) for line in f.readlines()])
 
     c = {
         0: 1
